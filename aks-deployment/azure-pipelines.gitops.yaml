@@ -39,7 +39,7 @@ stages:
     - task: AzureCLI@1
       name: RunAzCLIScripts
       inputs:
-        azureSubscription: 'AzureMPN'
+        azureSubscription: 'Free Trial'
         scriptLocation: 'inlineScript'
         inlineScript: |
           export GITHUB_TOKEN=$(GITHUB_TOKEN)
