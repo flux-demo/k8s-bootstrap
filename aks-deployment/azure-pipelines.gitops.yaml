@@ -2,11 +2,11 @@
 trigger: none
 
 variables:
-  CLUSTERNAME: 'CLUSTERNAME'
-  RG: 'CLUSTER_RESOURCE_GROUP'
+  CLUSTERNAME: 'sandbox'
+  RG: 'sandbox'
   GITHUB_REPO: 'k8s-bootstrap'
-  GITHUB_USER: 'GITHUB_USER'
-  KEY_VAULT: 'KEYVAULT_SHORTNAME'
+  GITHUB_USER: 'ErikLundJensen'
+  KEY_VAULT: 'elj-sandbox-vault'
 
 stages:
 - stage: DeployGitOpsCluster
@@ -44,7 +44,7 @@ stages:
         inlineScript: |
           export GITHUB_TOKEN=$(GITHUB_TOKEN)
           az aks get-credentials -g $(RG) -n $(CLUSTERNAME) --admin
-          msi="$(az aks show -n CLUSTERNAME -g CLUSTER_RESOURCE_GROUP | jq .identityProfile.kubeletidentity.objectId -r)"
+          msi="$(az aks show -n sandbox -g sandbox | jq .identityProfile.kubeletidentity.objectId -r)"
           az keyvault set-policy --name $(KEY_VAULT) --object-id $msi --secret-permissions get
           curl -s https://toolkit.fluxcd.io/install.sh | sudo bash
           flux bootstrap github --owner=$(GITHUB_USER) --repository=$(GITHUB_REPO) --branch=main --path=demo-cluster --personal
