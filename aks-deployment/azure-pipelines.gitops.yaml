@@ -18,7 +18,7 @@ stages:
     # DEPLOY AKS
     - task: AzureResourceGroupDeployment@2
       inputs:
-        azureSubscription: 'AzureMPN'
+        azureSubscription: 'Free Trial'
         action: 'Create Or Update Resource Group'
         resourceGroupName: '$(RG)'
         location: 'North Europe'
