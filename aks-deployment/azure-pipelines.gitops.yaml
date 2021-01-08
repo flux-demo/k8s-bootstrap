@@ -21,7 +21,7 @@ stages:
         azureSubscription: 'AzureMPN'
         action: 'Create Or Update Resource Group'
         resourceGroupName: '$(RG)'
-        location: 'West Europe'
+        location: 'North Europe'
         templateLocation: 'Linked artifact'
         csmFile: 'aks/deploy.json'
         csmParametersFile: 'aks/deployparams.gitops.json'
