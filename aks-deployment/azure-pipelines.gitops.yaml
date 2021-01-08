@@ -18,7 +18,7 @@ stages:
     # DEPLOY AKS
     - task: AzureResourceGroupDeployment@2
       inputs:
-        azureSubscription: 'Free Trial'
+        azureSubscription: 'AzureMPN'
         action: 'Create Or Update Resource Group'
         resourceGroupName: '$(RG)'
         location: 'North Europe'
@@ -39,7 +39,7 @@ stages:
     - task: AzureCLI@1
       name: RunAzCLIScripts
       inputs:
-        azureSubscription: 'Free Trial'
+        azureSubscription: 'AzureMPN'
         scriptLocation: 'inlineScript'
         inlineScript: |
           export GITHUB_TOKEN=$(GITHUB_TOKEN)
