@@ -2,8 +2,8 @@
 trigger: none
 
 variables:
-  CLUSTERNAME: 'sandbox'
-  RG: 'sandbox'
+  CLUSTERNAME: 'aks-sandbox'
+  RG: 'sandboxRG'
   GITHUB_REPO: 'k8s-bootstrap'
   GITHUB_USER: 'ErikLundJensen'
   KEY_VAULT: 'elj-sandbox-vault'
