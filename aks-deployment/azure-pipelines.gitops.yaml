@@ -2,7 +2,7 @@
 trigger: none
 
 variables:
-  CLUSTERNAME: 'aks-sandbox'
+  CLUSTERNAME: 'aks-sandbox2'
   RG: 'sandboxRG'
   GITHUB_REPO: 'k8s-bootstrap'
   GITHUB_USER: 'ErikLundJensen'
