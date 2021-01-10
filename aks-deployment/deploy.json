@@ -143,7 +143,7 @@
             "ssh": {
               "publicKeys": [
                 {
-                  "keyData": "ssh-rsa KEYDATA"
+                  "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1/BPDWoOohNpQmKOQLXW3JjxMg+ueLGhIQcwpe3veQb2t4RnsGT1YGZpQ2lGHUl0tC2kYFLJ7KkVxbgy9v6QspDU+8ajWiB06DWwCuqjpPvPdyBoFjvbEXNDuF1HXVuKMlOKzqfETIy4UW7UTuqYUhVH+O/AjDZ2WC5X+MNDVz6i5vPeW8ekEPOz5D2TANUN40dG/JgA2F8AUa8Hq9vahrv9e1wHethxfl2tiemY27sXjyAB8AhhsOl7UXC/YbOVmXdfiqXVrOnCOioqDB29XkGMcKg09f3mdpJemFfTyxZg1pNsJKXWuYFVXhQMUMqrDvpJ9JxtZXWB882xVSGSP erik@DESKTOP-0R3OQFP"
                 }
               ]
             }
